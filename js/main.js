@@ -1,59 +1,38 @@
-(function ($) {
-    "use strict";
+const header = document.querySelector(".site-header");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = [...document.querySelectorAll(".site-nav a")];
+const sections = navLinks
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner(0);
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
+document.getElementById("year").textContent = new Date().getFullYear();
 
+navToggle.addEventListener("click", () => {
+  const isOpen = header.classList.toggle("open");
+  navToggle.setAttribute("aria-expanded", String(isOpen));
+});
 
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    header.classList.remove("open");
+    navToggle.setAttribute("aria-expanded", "false");
+  });
+});
 
-   // testimonial carousel
-   $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    items: 1,
-    smartSpeed: 1500,
-    dots: true,
-    dotsData: true,
-    loop: true,
-    margin: 25,
-    nav : true,
-    navText : [
-        '<i class="bi bi-arrow-left"></i>',
-        '<i class="bi bi-arrow-right"></i>'
-    ]
-    });
-
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 5,
-        time: 2000
-    });
-
-
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
+const setActiveLink = () => {
+  let current = null;
+  sections.forEach((section) => {
+    if (section.getBoundingClientRect().top <= 140) {
+      current = section;
     }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+  });
 
+  if (!current) return;
 
-})(jQuery);
+  navLinks.forEach((link) => {
+    link.classList.toggle("active", link.getAttribute("href") === `#${current.id}`);
+  });
+};
 
+setActiveLink();
+window.addEventListener("scroll", setActiveLink, { passive: true });

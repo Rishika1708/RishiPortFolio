@@ -1,223 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Rishika K L, junior software developer building practical web applications with Java, MySQL, JavaScript, Angular, and React.">
+  <title>Rishika K L | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Rishika K L home">
+      <span>RK</span>
+      <strong>Rishika K L</strong>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Internship</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Rishi Portfolio</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Portfolio</p>
+        <h1>Junior Software Developer</h1>
+        <p class="hero-tagline">Building clean, useful web applications with care.</p>
+        <p class="hero-copy">
+          I am a BCA graduate from Nagercoil focused on Java, MySQL, JavaScript, Angular,
+          React, and full-stack web development. I enjoy turning ideas into simple,
+          reliable interfaces and learning better ways to solve real problems.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="RishiCV.pdf" download>Download CV</a>
         </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-section border-0">
-            <nav class="navbar navbar-light">
-                <div class="navbar-nav flex-column">
-                    <a href="#pigraHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
-                    <a href="#pigraAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
-                    <a href="#pigraSkills"class="nav-item nav-link"><span class="fab fa-servicestack"></span> Skills</a>
-                    <a href="#pigraBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Project</a>
-                    <a href="#pigraContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
-                </div>
-            </nav>
+        <ul class="quick-facts" aria-label="Quick profile details">
+          <li><span>Location</span>Nagercoil, Kanyakumari</li>
+          <li><span>Email</span><a href="mailto:rishikl4782@gmail.com">rishikl4782@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:+919360994782">+91 93609 94782</a></li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-label="Portrait of Rishika K L">
+        <img src="img/Rishika_pht.png" alt="Rishika K L">
+        <div class="availability">
+          <span></span>
+          Available for junior developer roles
         </div>
-        <!-- Navbar End -->
+      </div>
+    </section>
 
-        <!-- Header Start -->
-        <div class="container-fluid" id="pigraHome">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="header-content bg-dark h-100 pt-6 pe-6 pb-6">
-                            <a href="index.html" class="navbar-brand d-inline-flex pb-5 wow fadeInUp" data-wow-delay="0.1s">
-                                <h1 class="display-6 text-white mb-0">Rishi</h1>
-                            </a>
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.3s">
-                                <p class="text-white sub-title">👋 Hello I'm Rishika</p>
-                                <h1 class="display-6 text-white mb-0">Creative Developer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="header-img d-flex h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <!-- <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
-                                    <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
-                                        <img src="img/rishiii.jpg" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="Image">
-                                    </div>
-                                </div> -->
-                                <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h1 class="display-6 mb-4">Junior Software Developer</h1>
-                                    <p class="mb-4"> Enthusiastic and detail-oriented software developer with a passion for building efficient,
-                                        scalable, and user-friendly applications. Committed to continuous learning, problem
-                                        solving, and delivering high-quality solutions in a collaborative environment.
-                                     
-                                    </p>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">Nagercoil, KanayaKumari</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fas fa-envelope text-primary me-3"></i>
-                                        <p class="text-dark mb-0">rishikl4782@gmail.com</p>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="fa fa-phone-alt text-primary me-3"></i>
-                                        <p class="text-dark mb-0">+91 9360994782</p>
-                                    </div>
-                                    
-                                    <div class="d-flex">
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://web.telegram.org/"><i class='fab fa-telegram' ></i></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-3" href="https://www.instagram.com/ri_shi_ka._.19"><i class="fab fa-instagram text-white"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-0" href="https://www.linkedin.com/in/rishika-kl-"><i class="fab fa-linkedin-in text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="section-title">About</p>
+        <h2>Motivated developer with a practical full-stack foundation</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I am Rishika, a passionate and detail-oriented software developer with hands-on
+          practice in front-end development, backend logic, database integration, and
+          responsive UI design. I like building applications that feel clear, fast, and
+          comfortable for people to use.
+        </p>
+        <div class="stats">
+          <div><strong>2025</strong><span>BCA Graduate</span></div>
+          <div><strong>82.3%</strong><span>College Score</span></div>
+          <div><strong>3</strong><span>Internship Tracks</span></div>
         </div>
-        <!-- Header End -->
+      </div>
+    </section>
 
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="section-title">Skills</p>
+        <h2>Technologies I use to design, build, and connect applications</h2>
+      </div>
+      <div class="skill-grid">
+        <article><strong>Java</strong><span>Backend fundamentals, OOP, application logic</span><img src="img/skill-java.svg" alt="Java icon"></article>
+        <article><strong>MySQL</strong><span>Schema design, queries, relational data</span><img src="img/skill-mysql.svg" alt="MySQL icon"></article>
+        <article><strong>HTML & CSS</strong><span>Semantic pages, responsive layouts</span><img src="img/skill-html-css.svg" alt="HTML and CSS icon"></article>
+        <article><strong>JavaScript</strong><span>Interactive UI and browser behavior</span><img src="img/skill-js.svg" alt="JavaScript icon"></article>
+        <article><strong>Bootstrap</strong><span>Fast responsive interface building</span><img src="img/skill-bootstrap.svg" alt="Bootstrap icon"></article>
+        <article><strong>Angular</strong><span>Component-driven front-end development</span><img src="img/skill-angular.svg" alt="Angular icon"></article>
+        <article><strong>React</strong><span>Dynamic interfaces and reusable components</span><img src="img/skill-react.svg" alt="React icon"></article>
+        <article><strong>Figma</strong><span>Wireframes, UI planning, visual polish</span><img src="img/skill-figma.svg" alt="Figma icon"></article>
+        <article><strong>Tally Prime</strong><span>Accounting entries, billing, and business reports</span><img src="img/skill-tally.svg" alt="Tally Prime icon"></article>
+      </div>
+    </section>
 
-        <!-- About Start -->
-        <div class="container-fluid" id="pigraAbout">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-12 col-lg-3">
-                        <div class="about-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">About Me</p>
-                                <h1 class="display-6 text-white mb-0">Junior software Developer</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-9">
-                        <div class="about-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-5">
-                                <div class="col-xl-5">
-                                    <div class="about-img bg-light p-4 wow fadeInUp" data-wow-delay="0.1s">
-                                        <img src="img/unnamed.jpg" class="img-fluid w-100" alt="Image">
-                                        <div class="sosial-icon">
-                                            <a class="btn btn-primary btn-sm-square me-3" href="#"><i class="fab fa-telegram text-white" ></i></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-3" href="#"><i class="fab fa-instagram text-white"></i></a>
-                                            <a class="btn btn-primary btn-sm-square mb-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-7 wow fadeInUp" data-wow-delay="0.3s">
-                                    <h4 class="mb-4">Hello, I'm Rishika</h4>
-                                    <p class="mb-4">"I’m Rishika, a passionate and motivated BCA final-year student with strong skills in Java, MySQL, HTML, CSS, JavaScript, Bootstrap, TypeScript, and Angular. I love building user-friendly applications and continuously learning new technologies to enhance my skills.
-                                        I am excited to kickstart my career in the tech industry and contribute to innovative projects."
-                                    </p>
-                                    <div class="row g-4 mb-4">
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Phone :</strong> +91 9360994782</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Address :</strong>Nagercoil, KanayaKumari</p>
-                                        </div>
-                                        <div class="col-6">
-                                            <p><strong class="fw-bold text-dark">Nationality :</strong> India</p>
-                                            <p><strong class="fw-bold text-dark">Email :</strong> rishikl4782@gmail.com</p>
-                                            <p class="mb-0"><strong class="fw-bold text-dark">Freelancer :</strong> Available</p>
-                                        </div>
-                                    </div>
-                                    <a href="RishiCV.pdf" class="btn btn-primary py-2 px-4"> <i class="fas fa-download me-2"></i>Download My CV</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section experience" id="experience">
+      <div class="section-heading">
+        <p class="section-title">Internship</p>
+        <h2>Practical experience across frontend, backend, and database work</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <div class="timeline-marker"></div>
+          <p class="meta">Full Stack Web Development</p>
+          <h3>Node.js, MySQL, HTML, CSS, Bootstrap, JavaScript</h3>
+          <p>
+            Built full-stack web application features, worked with REST APIs, connected
+            pages to MySQL data, and improved practical understanding of complete web flows.
+          </p>
+        </article>
+        <article>
+          <div class="timeline-marker"></div>
+          <p class="meta">React and Java Development</p>
+          <h3>React.js, Java, MySQL</h3>
+          <p>
+            Developed dynamic UI screens, practiced API integration, handled database-backed
+            features, and followed structured coding practices for scalable applications.
+          </p>
+        </article>
+        <article>
+          <div class="timeline-marker"></div>
+          <p class="meta">Frontend with React</p>
+          <h3>Ecommerce Website Development</h3>
+          <p>
+            Built an ecommerce website using React with reusable components, product
+            listing sections, clean navigation, responsive layouts, and a smooth shopping
+            experience focused on clarity and usability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="section-title">Projects</p>
+        <h2>Selected work focused on everyday digital workflows</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="img/house.jpg" alt="Household service project preview">
+          <span>Web App</span>
+          <h3>Online Household Service</h3>
+          <p>
+            A service-booking platform concept that helps users connect with trusted
+            professionals for cleaning, plumbing, electrical work, and home repairs.
+          </p>
+          <ul>
+            <li>Service discovery and booking flow</li>
+            <li>User-friendly responsive layout</li>
+            <li>Designed for fast local service access</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <img src="img/train.jpg" alt="Ticket registration project preview">
+          <span>Mini Project</span>
+          <h3>Ticket Registration</h3>
+          <p>
+            A simple ticket registration system for creating and tracking support requests
+            so issues can be managed clearly from submission to follow-up.
+          </p>
+          <ul>
+            <li>Clean registration form experience</li>
+            <li>Ticket detail tracking</li>
+            <li>Organized issue management flow</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <img src="img/reg.png" alt="Student registration form preview">
+          <span>Form UI</span>
+          <h3>Student Registration Form</h3>
+          <p>
+            A student registration interface for entering, reviewing, and submitting
+            academic details through a straightforward browser-based form.
+          </p>
+          <ul>
+            <li>Structured form fields</li>
+            <li>Validation-friendly layout</li>
+            <li>Beginner-friendly UI implementation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education" id="education">
+      <div class="section-heading">
+        <p class="section-title">Education</p>
+        <h2>Academic foundation in computer applications</h2>
+      </div>
+      <div class="education-list">
+        <article>
+          <span>2022 - 2025</span>
+          <h3>Bachelor of Computer Applications</h3>
+          <p>Arunachala Arts and Science College, Vellaichanthai, Kanyakumari</p>
+          <strong>CGPA: 82.3%</strong>
+        </article>
+        <article>
+          <span>2021 - 2022</span>
+          <h3>Higher Secondary</h3>
+          <p>S.N.M. Hindu Vidyalaya, Krishnancoil, Nagercoil</p>
+          <strong>Score: 84.5%</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-panel">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something practical and polished</h2>
+          <p>
+            I am open to junior software developer opportunities, internships, and project
+            collaborations where I can contribute, learn, and grow with a team.
+          </p>
         </div>
-        <!-- About End -->
-
-
-        <!-- Education Start -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-lg-3">
-                        <div class="education-header bg-dark h-100 pt-6 pe-6 pb-6">
-                            <div class="text-start d-flex flex-column justify-content-center wow fadeInUp" data-wow-delay="0.1s">
-                                <p class="text-white sub-title">Education</p>
-                                <h1 class="display-6 text-white mb-0">My education qualification</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="education-content h-100 pt-6 ps-6 pb-6">
-                            <div class="row g-4">
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.1s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">Arunachala Arts and Science</p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2022-2025
-                                            </div>
-                                        </div>
-                                        <div class="resume-item">
-                                            <h4 class="mb-3">Bachelor of Computer Application</h4>
-
-                                            <h5>  CGPA: 82.3% </h5>
-                                            <p><em>College in Vellaichanthai, KanayaKumari</em></p>
-                                            <p>Bachelor of Computer Applications<br> Achieved a CGPA of 82.3%.</p>
-                                          </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="education-item rounded p-4 h-100 wow fadeInUp" data-wow-delay="0.3s">
-                                        <div class="d-flex align-items-center mb-3">
-                                            <p class="fs-5 mb-0 me-4">S.N.M. Hindu Vidyalaya </p>
-                                            <div>
-                                                <span class="fa fa-calendar me-1"></span> 2021 - 2022
-                                            </div>
-                                        </div>
-                                        <h4 class="mb-3">XII</h4>
-                                        <h5>Completed Schooling - 84.5%</h5>
-                                        <p><em>School in Krishnancoil, Nagercoil</em></p>
-                                        <p>Achieved 84.5% in the board exams.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="contact-links">
+          <a href="mailto:rishikl4782@gmail.com">rishikl4782@gmail.com</a>
+          <a href="tel:+919360994782">+91 93609 94782</a>
+          <a href="https://www.linkedin.com/in/rishika-kl-" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          <a href="https://www.instagram.com/ri_shi_ka._.19" target="_blank" rel="noreferrer">Instagram</a>
         </div>
+<<<<<<< HEAD
         <!-- Education End -->
 
         <!-- Experience Start -->
@@ -1194,4 +1200,15 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Rishika K L</p>
+    <a href="#home">Back to top</a>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
