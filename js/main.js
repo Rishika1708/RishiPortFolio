@@ -5,7 +5,12 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
-document.getElementById("year").textContent = new Date().getFullYear();
+//document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 navToggle.addEventListener("click", () => {
   const isOpen = header.classList.toggle("open");
