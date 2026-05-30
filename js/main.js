@@ -6,15 +6,17 @@ const sections = navLinks
   .filter(Boolean);
 
 
-navToggle.addEventListener("click", () => {
-  const isOpen = header.classList.toggle("open");
-  navToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (header && navToggle) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    header.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
+    header?.classList.remove("open");
+    navToggle?.setAttribute("aria-expanded", "false");
   });
 });
 
