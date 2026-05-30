@@ -408,7 +408,7 @@ h3 {
 }
 
 .project-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .project-card {
@@ -426,7 +426,8 @@ h3 {
 .project-card span,
 .project-card h3,
 .project-card p,
-.project-card ul {
+.project-card ul,
+.project-actions {
   margin-right: 24px;
   margin-left: 24px;
 }
@@ -441,6 +442,36 @@ h3 {
   margin-top: 18px;
   margin-bottom: 24px;
   color: var(--muted);
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  margin-bottom: 24px;
+}
+
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.project-actions a.disabled {
+  border-color: var(--line);
+  background: var(--white);
+  color: var(--muted);
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .education-list {
